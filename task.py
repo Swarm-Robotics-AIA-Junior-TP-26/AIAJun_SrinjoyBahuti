@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-CSV_PATH = "ec704193-c88d-4f4b-8e18-e2cb387c3c47.csv"  # change if needed
+CSV_PATH = "timestamp%2Caltitude_m%2Clatitude%2Clongitude%2Cbattery_vo.csv"  
 
 
 df = pd.read_csv(CSV_PATH)
@@ -22,7 +22,7 @@ alt[(alt < -50) | (alt > 10000)] = np.nan
 
 order = df["timestamp"].argsort()
 alt_sorted = alt.iloc[order]
-spikes = alt_sorted.diff().abs() > 100.0  # threshold in meters per sample
+spikes = alt_sorted.diff().abs() > 100.0 
 alt.iloc[alt_sorted.index[spikes.fillna(False)]] = np.nan
 
 df["altitude_clean"] = alt.ffill().bfill()
@@ -76,3 +76,4 @@ df[["timestamp","altitude_clean","latitude","longitude","flight_mode"]].to_csv(
     "cleaned_drone_data.csv", index=False
 )
 print("Saved: cleaned_drone_data.csv")
+
