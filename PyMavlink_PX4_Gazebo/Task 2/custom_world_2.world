@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="Harsh_is_Goat">
+
+
+
+
+   
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+   
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+   
+    <include>
+      <uri>model://asphalt_plane</uri>
+      <pose>0 0 0.01 0 0 0</pose>
+    </include>
+
+   
+    <include>
+      <uri>model://house_1</uri>
+      <name>house_1</name>
+      <pose>15 15 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://house_2</uri>
+      <name>house_2</name>
+      <pose>15 -15 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://house_3</uri>
+      <name>house_3</name>
+      <pose>-15 15 0 0 0 3.14</pose>
+    </include>
+
+   
+    <include>
+      <uri>model://office_building</uri>
+      <name>office_building</name>
+      <pose>-20 -20 0 0 0 0</pose>
+    </include>
+
+   
+    <include>
+      <uri>model://oak_tree</uri>
+      <name>oak_tree_1</name>
+      <pose>10 5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://oak_tree</uri>
+      <name>oak_tree_2</name>
+      <pose>-10 8 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_1</name>
+      <pose>5 -10 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_2</name>
+      <pose>-8 -5 0 0 0 0</pose>
+    </include>
+
+    
+    <include>
+      <uri>model://hatchback_red</uri>
+      <name>car_red</name>
+      <pose>5 2 0 0 0 0.78</pose>
+    </include>
+
+    <include>
+      <uri>model://hatchback_blue</uri>
+      <name>car_blue</name>
+      <pose>-5 3 0 0 0 -0.78</pose>
+    </include>
+
+    <include>
+      <uri>model://suv</uri>
+      <name>suv_1</name>
+      <pose>8 -5 0 0 0 1.57</pose>
+    </include>
+
+   
+    <include>
+      <uri>model://person_standing</uri>
+      <name>person_1</name>
+      <pose>3 8 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://person_walking</uri>
+      <name>person_2</name>
+      <pose>-3 -8 0 0 0 1.57</pose>
+    </include>
+
+  </world>
+</sdf>
